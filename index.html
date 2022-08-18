@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/reset.css" />
+  </head>
+  <body>
+    <div class="head">
+      <h1>
+        Max Welter, 22, Web Developer
+      </h1>
+      <p>
+        with a penchant for functional code. You’ll see no classes around where
+        I work. Currently employed in this fuction @ 101. Open to some freelance
+        work.
+      </p>
+      <p>
+        Javascript, Typescript, Node, React, SQL, PostgreSQL, FP, PHP +
+        experience in Wordpress. Knowledge of design tools Sketch, Figma, Adobe
+        AI.
+      </p>
+    </div>
+
+    <footer>
+      <a href="https://github.com/weltmx">Github @covahn</a>
+      <a href="https://dribbble.com/weltmx">dribbble</a>
+      <a href="https://www.linkedin.com/in/max-welter-508592231/">LinkedIn</a>
+    </footer>
+
+    <style>
+      :root {
+        --bg: #f2defa;
+        --fg: #130018;
+      }
+
+      body {
+        background: linear-gradient(
+          180deg,
+          rgba(242, 222, 250, 1) 0%,
+          rgba(255, 255, 255, 1) 100%
+        );
+        color: var(--fg);
+        font-family: "PT Serif", "Times New Roman", Times, serif;
+        padding: 50px 70px;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 26px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 100vh;
+        max-width: 500px;
+        row-gap: 40px;
+      }
+
+      @media only screen and (max-width: 600px) {
+        body {
+          padding: 30px 50px;
+        }
+      }
+
+      .head {
+        display: flex;
+        flex-direction: column;
+        row-gap: 12px;
+      }
+
+      footer {
+        display: flex;
+        flex-direction: column;
+        row-gap: 6px;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      h1 {
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 36px;
+      }
+    </style>
+  </body>
+</html>
